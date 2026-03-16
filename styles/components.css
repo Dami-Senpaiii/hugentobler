@@ -1,0 +1,55 @@
+.site-header{border-bottom:1px solid var(--c-border-200);background:var(--c-bg-000);position:sticky;top:0;z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--s-4);padding-block:var(--s-3)}
+.logo{font-weight:800;text-decoration:none;letter-spacing:.02em}
+.logo span{background:var(--c-brand-500);padding:2px 4px}
+.nav-toggle{display:none}
+.main-nav ul{display:flex;list-style:none;gap:var(--s-4);margin:0;padding:0}
+.main-nav a{text-decoration:none;padding:8px 10px;min-height:44px;display:inline-flex;align-items:center}
+.header-actions{display:flex;align-items:center;gap:var(--s-3)}
+.lang-switch{display:flex;gap:var(--s-2)}
+.lang-switch a{padding:6px 8px;border:1px solid var(--c-border-200);border-radius:8px;text-decoration:none;min-height:36px;display:inline-flex;align-items:center}
+.btn{display:inline-flex;min-height:44px;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;transition:transform var(--dur-1) var(--ease);align-items:center;justify-content:center;border:1px solid transparent}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--c-brand-500);color:var(--c-ink-900)}
+.btn-secondary{border-color:var(--c-ink-900);background:transparent}
+.hero{padding-block:clamp(24px,5vw,56px)}
+.hero-grid{display:grid;gap:clamp(16px,4vw,40px);grid-template-columns:1.1fr .9fr;align-items:center}
+.hero-media img{width:100%;height:auto;display:block;border-radius:var(--r-2);border:1px solid var(--c-border-200)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-4)}
+.tile{border:1px solid var(--c-border-200);padding:var(--s-5);border-radius:var(--r-2);background:var(--c-surface-050)}
+.breadcrumb ol{display:flex;flex-wrap:wrap;gap:var(--s-2);list-style:none;padding:0;margin:0}
+.breadcrumb a{text-decoration:none}
+.filter-bar{display:flex;flex-wrap:wrap;gap:var(--s-3);padding:var(--s-4);border:1px solid var(--c-border-200);border-radius:var(--r-2);background:var(--c-surface-050)}
+.filter-bar input,.filter-bar select{min-height:44px;padding:8px 10px;border:1px solid var(--c-border-200);border-radius:8px}
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-5);content-visibility:auto}
+.product-card{border:1px solid var(--c-border-200);border-radius:var(--r-2);overflow:hidden}
+.product-media img{width:100%;height:auto;display:block}
+.product-body{padding:var(--s-4)}
+.product-actions{display:flex;gap:var(--s-2);flex-wrap:wrap}
+.specs-table{width:100%;border-collapse:collapse}
+.specs-table th,.specs-table td{border:1px solid var(--c-border-200);padding:var(--s-3);text-align:left}
+.panel{border:1px solid var(--c-border-200);border-radius:var(--r-2);padding:var(--s-5);background:var(--c-surface-050)}
+form .field{display:grid;gap:var(--s-2);margin-bottom:var(--s-4)}
+label{font-weight:600}
+input,textarea,select{border:1px solid var(--c-border-200);border-radius:8px;padding:10px 12px;min-height:44px}
+.error{color:#b00020;font-size:.95em}
+.site-footer{background:var(--c-ink-900);color:var(--c-bg-000);margin-top:var(--s-10)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:var(--s-6);padding-block:var(--s-8)}
+.site-footer a{color:var(--c-bg-000)}
+.legal{border-top:1px solid #333;padding:var(--s-4) 0}
+.stepper{display:flex;gap:var(--s-3);list-style:none;padding:0;margin:0 0 var(--s-5)}
+.stepper li{padding:6px 10px;border:1px solid var(--c-border-200);border-radius:999px;background:var(--c-surface-050)}
+.stepper .active{background:var(--c-brand-500)}
+.wizard-step{border:1px solid var(--c-border-200);padding:var(--s-5);border-radius:var(--r-2)}
+@media (max-width:1023px){
+  .hero-grid{grid-template-columns:1fr}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:767px){
+  .nav-toggle{display:inline-flex;min-height:44px;align-items:center}
+  .main-nav{position:fixed;inset:0 0 0 25%;background:var(--c-bg-000);transform:translateX(100%);transition:transform var(--dur-1) var(--ease);padding:var(--s-6)}
+  .main-nav[data-open="true"]{transform:translateX(0)}
+  .main-nav ul{flex-direction:column}
+  .header-actions .btn{display:none}
+  .tiles,.product-grid,.footer-grid{grid-template-columns:1fr}
+}
