@@ -1,0 +1,57 @@
+[
+  {
+    "id": "m550-de",
+    "kategorie": "Seezeichen",
+    "name": "Solarleuchte Typ M550",
+    "kurztext": "Autarke LED-Solarleuchte für maritime Markierungen.",
+    "key_specs": {"technology": "Solar / LED", "ip": "IP67", "maintenance": "unterhaltsfrei"},
+    "downloads": ["/assets/datenblaetter/m550.html"],
+    "images": ["/assets/products/m550.svg"],
+    "tags": ["solar", "led", "maritim"],
+    "lang": "de"
+  },
+  {
+    "id": "m550-fr",
+    "kategorie": "Signalisation maritime",
+    "name": "Lampe solaire type M550",
+    "kurztext": "Feu solaire LED autonome pour balisage maritime.",
+    "key_specs": {"technology": "Solaire / LED", "ip": "IP67", "maintenance": "sans entretien"},
+    "downloads": ["/assets/datenblaetter/m550.html"],
+    "images": ["/assets/products/m550.svg"],
+    "tags": ["solaire", "led", "maritime"],
+    "lang": "fr"
+  },
+  {
+    "id": "m550-en",
+    "kategorie": "Marine beacons",
+    "name": "Solar Light Type M550",
+    "kurztext": "Autonomous solar LED marker light for marine environments.",
+    "key_specs": {"technology": "Solar / LED", "ip": "IP67", "maintenance": "maintenance-free"},
+    "downloads": ["/assets/datenblaetter/m550.html"],
+    "images": ["/assets/products/m550.svg"],
+    "tags": ["solar", "led", "marine"],
+    "lang": "en"
+  },
+  {
+    "id": "t300-de",
+    "kategorie": "Tunnelsicherheit",
+    "name": "Tunnelmodul T300",
+    "kurztext": "Signal- und Warnleuchte für Tunnelportale und Querschläge.",
+    "key_specs": {"technology": "LED", "housing": "Aluminium", "supply": "24VDC"},
+    "downloads": ["/assets/datenblaetter/t300.html"],
+    "images": ["/assets/products/t300.svg"],
+    "tags": ["tunnel", "warnung"],
+    "lang": "de"
+  },
+  {
+    "id": "a400-en",
+    "kategorie": "Aviation obstruction",
+    "name": "Obstacle Beacon A400",
+    "kurztext": "High-visibility obstruction light for aviation safety.",
+    "key_specs": {"technology": "LED", "intensity": "Type B", "protection": "IP66"},
+    "downloads": ["/assets/datenblaetter/a400.html"],
+    "images": ["/assets/products/a400.svg"],
+    "tags": ["aviation", "obstacle", "led"],
+    "lang": "en"
+  }
+]
