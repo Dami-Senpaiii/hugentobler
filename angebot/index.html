@@ -1,0 +1,23 @@
+<!doctype html><html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angebot anfordern | Spezialleuchten AG</title><meta name="description" content="In vier Schritten ein Angebot für Spezialleuchten anfordern.">
+<link rel="canonical" href="https://www.spezialleuchten.ch/angebot/"><meta name="robots" content="index,follow">
+<link rel="stylesheet" href="/styles/tokens.css"><link rel="stylesheet" href="/styles/base.css"><link rel="stylesheet" href="/styles/components.css"><link rel="stylesheet" href="/styles/pages.css">
+<script>document.documentElement.classList.add('js');</script>
+</head><body>
+<a class="skip-link" href="#main">Direkt zum Inhalt springen</a>
+<header class="site-header"><div class="container header-inner"><a class="logo" href="/"><span>SPEZIAL</span>LEUCHTEN</a></div></header>
+<main id="main" class="container section">
+<h1>Angebot anfordern</h1>
+<p>Das Formular funktioniert ohne JavaScript als lineare Eingabe. Mit JavaScript steht eine schrittweise Führung zur Verfügung.</p>
+<form data-wizard>
+  <ol class="stepper" aria-label="Anfrage-Schritte"><li class="active">1. Produkt</li><li>2. Anforderungen</li><li>3. Kontakt</li><li>4. Prüfen</li></ol>
+  <section class="wizard-step" aria-labelledby="st1"><h2 id="st1">1. Produktauswahl</h2><div class="field"><label for="product">Produkt oder Kategorie</label><select id="product" required><option>M550 Seezeichen</option><option>Tunnelmodule</option></select></div><div class="field"><label for="qty">Menge</label><input id="qty" type="number" min="1" value="1"></div><button class="btn btn-secondary" type="button" data-next>Weiter</button></section>
+  <section class="wizard-step" aria-labelledby="st2"><h2 id="st2">2. Anforderungen</h2><div class="field"><label for="app">Anwendung</label><input id="app"></div><div class="field"><label for="context">Installationskontext</label><input id="context"></div><div class="field"><label for="voltage">Spannung</label><input id="voltage"></div><div class="field"><label for="deadline">Termin</label><input id="deadline" type="date"></div><div class="field"><label for="notes">Notizen</label><textarea id="notes"></textarea></div><button class="btn btn-secondary" type="button" data-prev>Zurück</button> <button class="btn btn-secondary" type="button" data-next>Weiter</button></section>
+  <section class="wizard-step" aria-labelledby="st3"><h2 id="st3">3. Kontaktdaten</h2><div class="field"><label for="company">Firma</label><input id="company"></div><div class="field"><label for="name">Name</label><input id="name" required></div><div class="field"><label for="email">E-Mail</label><input id="email" type="email" required></div><div class="field"><label for="phone">Telefon</label><input id="phone" type="tel"></div><div class="field"><label for="lang">Sprache</label><select id="lang"><option>DE</option><option>FR</option><option>EN</option></select></div><button class="btn btn-secondary" type="button" data-prev>Zurück</button> <button class="btn btn-secondary" type="button" data-next>Weiter</button></section>
+  <section class="wizard-step" aria-labelledby="st4"><h2 id="st4">4. Prüfen & Senden</h2><p>Bitte Angaben prüfen. Nach dem Absenden melden wir uns zeitnah.</p><div class="field"><label><input type="checkbox" required> Ich bestätige die korrekte Dateneingabe.</label></div><button class="btn btn-secondary" type="button" data-prev>Zurück</button> <button class="btn btn-primary" type="submit">Anfrage senden</button></section>
+</form>
+</main>
+<footer class="site-footer"><div class="container legal">© Spezialleuchten AG</div></footer>
+<script src="/assets/main.js" defer></script>
+</body></html>
