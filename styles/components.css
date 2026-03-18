@@ -26,6 +26,9 @@
 .product-media img{width:100%;height:auto;display:block}
 .product-body{padding:var(--s-4)}
 .product-actions{display:flex;gap:var(--s-2);flex-wrap:wrap}
+.product-tags{display:flex;gap:var(--s-2);flex-wrap:wrap;margin-bottom:var(--s-2)}
+.product-tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;border:1px solid var(--c-border-200);background:var(--c-surface-050);font-size:.875rem;font-weight:600}
+.product-title{margin:0}
 .specs-table{width:100%;border-collapse:collapse}
 .specs-table th,.specs-table td{border:1px solid var(--c-border-200);padding:var(--s-3);text-align:left}
 .panel{border:1px solid var(--c-border-200);border-radius:var(--r-2);padding:var(--s-5);background:var(--c-surface-050)}
