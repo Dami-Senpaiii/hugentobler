@@ -1,0 +1,176 @@
+{
+  "quelle": "https://www.spezialleuchten.ch",
+  "erstellt_am_utc": "2026-03-18T08:59:01Z",
+  "kategorien": [
+    {
+      "kategorie": "Signalleuchten",
+      "slug": "signalleuchten",
+      "url": "https://www.spezialleuchten.ch/signalleuchten",
+      "produkte": []
+    },
+    {
+      "kategorie": "Blitzleuchten",
+      "slug": "blitzleuchten",
+      "url": "https://www.spezialleuchten.ch/blitzleuchten",
+      "produkte": [
+        "Blitzleuchte Typ 10",
+        "Blitzleuchte Typ 13-V",
+        "Blitzleuchte Typ 18",
+        "Blitzleuchte/Schallgeber Typ 316",
+        "Blitzleuchte Typ 11",
+        "Blitzleuchte Typ 16",
+        "Blitzleuchte Typ 100",
+        "Print zu Blitzleuchte Typ 16/18",
+        "Blitzleuchte Typ 13",
+        "Blitzleuchte Typ 17",
+        "Blitzleuchte Typ 110"
+      ]
+    },
+    {
+      "kategorie": "Blinkleuchten",
+      "slug": "blinkleuchten",
+      "url": "https://www.spezialleuchten.ch/blinkleuchten",
+      "produkte": [
+        "LED-Blinkleuchte Typ CTL 600",
+        "LED-Blinkleuchte Typ XLF S",
+        "LED-Blinkleuchte Typ CTL 900",
+        "LED-Blinkleuchte Typ XLF RGB"
+      ]
+    },
+    {
+      "kategorie": "Drehleuchten",
+      "slug": "drehleuchten",
+      "url": "https://www.spezialleuchten.ch/drehleuchten",
+      "produkte": [
+        "Drehleuchte Typ 92 (Auslaufmodell)",
+        "Drehleuchte Typ 130 (Auslaufmodell)",
+        "LED Drehspiegelleuchte Typ 94",
+        "LED Drehspiegelleuchte Typ 94-V"
+      ]
+    },
+    {
+      "kategorie": "Ampeln",
+      "slug": "ampeln",
+      "url": "https://www.spezialleuchten.ch/ampeln",
+      "produkte": [
+        "LED-Ampel Typ 142"
+      ]
+    },
+    {
+      "kategorie": "Sirenen",
+      "slug": "sirenen",
+      "url": "https://www.spezialleuchten.ch/sirenen",
+      "produkte": [
+        "Warnsirene Typ SIR-E S",
+        "Warnsirene Typ SIR-E LED S",
+        "Warnsirene Typ SIR-E LED M"
+      ]
+    },
+    {
+      "kategorie": "Schallgeber",
+      "slug": "schallgeber",
+      "url": "https://www.spezialleuchten.ch/schallgeber",
+      "produkte": [
+        "Schallgeber Typ 300",
+        "Schallgeber Typ 340S",
+        "Schallgeber Typ 320",
+        "Schallgeber Typ 330"
+      ]
+    },
+    {
+      "kategorie": "Zubehör",
+      "slug": "zubehoer",
+      "url": "https://www.spezialleuchten.ch/zubehoer",
+      "produkte": [
+        "Relais",
+        "Grundplatten",
+        "Sockel",
+        "Schutzkörbe",
+        "Wandhalter"
+      ]
+    },
+    {
+      "kategorie": "Tunnelsicherheit",
+      "slug": "tunnelsicherheit",
+      "url": "https://www.spezialleuchten.ch/tunnelsicherheit",
+      "produkte": [
+        "Notfallleuchte Typ SecuFlash4",
+        "Hinweisleuchte Typ LUXOLED 1A",
+        "Hinweisleuchte Typ LUXOLED 3",
+        "Notfallleuchte Typ Secu-Flash 1 (abgekündigt)",
+        "Fluchtwegschild aktiv hinterleuchtet",
+        "Hinweisleuchte Typ LUXOLED 2",
+        "Hinweisleuchte Typ LUXOLED 3A",
+        "Notfallleuchte Typ Secu-Flash 2 (abgekündigt)",
+        "Hinweisleuchte Typ LUXOLED 1",
+        "Hinweisleuchte Typ LUXOLED 2A",
+        "Hinweisleuchte Typ LUXOLED 5"
+      ]
+    },
+    {
+      "kategorie": "Flugzeichen",
+      "slug": "flugzeichen",
+      "url": "https://www.spezialleuchten.ch/flugzeichen",
+      "produkte": []
+    },
+    {
+      "kategorie": "Helikopterlandeplatz",
+      "slug": "helikopterlandeplatz",
+      "url": "https://www.spezialleuchten.ch/helikopterlandeplatz",
+      "produkte": [
+        "Anflugfeuer (Beacon) Typ 432",
+        "Windrichtungsanzeiger Typ 490-1",
+        "LED-Feuer Typ IL 555D",
+        "Landeplatzfeuer Typ 480 \"Helios\"",
+        "Flutlichtstrahler Typ EL 527D",
+        "Windsack Typ 490",
+        "Vollflaches LED-Feuer Typ IL 554D"
+      ]
+    },
+    {
+      "kategorie": "Flughafen",
+      "slug": "flughafen",
+      "url": "https://www.spezialleuchten.ch/flughafen",
+      "produkte": [
+        "Rollwegschild Typ 800",
+        "Überflurfeuer Typ EL 630D LED",
+        "Unterflurfeuer Typ IL 20D LED",
+        "Einbauschale zu Unterflurfeuer, 300mm",
+        "Unterflurfeuer Typ IL 702D LED",
+        "Rollwegschild Typ 810",
+        "Überflurfeuer Typ EL 632D LED",
+        "Unterflurfeuer Typ IL 241",
+        "Unterflurfeuer Typ IL 254D LED",
+        "Centerline Feuer Typ RCL",
+        "Überflurfeuer Typ EL 622D LED",
+        "Überflurfeuer Typ EL 640D LED",
+        "Unterflurfeuer Typ IL 241D LED",
+        "Strassenmarkierungsfeuer Typ IL 347 LED",
+        "Centerline Feuer Typ ILRCLD LED"
+      ]
+    },
+    {
+      "kategorie": "Hindernisbefeuerung",
+      "slug": "hindernisbefeuerung",
+      "url": "https://www.spezialleuchten.ch/hindernisbefeuerung",
+      "produkte": [
+        "Hindernisfeuer Typ 426",
+        "Hindernisfeuer Typ 427",
+        "Hindernisfeuer-System Typ AV-OLD-BAZL"
+      ]
+    },
+    {
+      "kategorie": "Seezeichen",
+      "slug": "seezeichen",
+      "url": "https://www.spezialleuchten.ch/seezeichen",
+      "produkte": [
+        "Landungsstegleuchte mit Nebellicht, Typ 421",
+        "Solarleuchte Typ M550",
+        "Hafeneinfahrtsleuchte Typ 422",
+        "Solarleuchte Typ M660",
+        "Sturmwarnleuchte Typ 461",
+        "Hafeneinfahrtsleuchte Typ M860"
+      ]
+    }
+  ]
+}
