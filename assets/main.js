@@ -68,7 +68,7 @@ if (productGrid && searchInput && categorySelect && tagsSelect && applyButton &&
     const title = escapeHtml(entry.name);
     const category = escapeHtml(entry.category);
     const source = escapeHtml(entry.source);
-    return `<article class="product-card"><div class="product-body"><h3 class="product-title">${title}</h3><dl class="product-specs"><div><dt>Kategorie</dt><dd>${category}</dd></div></dl><div class="product-actions"><a class="btn btn-secondary" href="${source}">Quelle</a></div></div></article>`;
+    return `<article class="product-card"><a class="product-media" href="${source}"><img src="../assets/products/placeholder.svg" alt="Platzhalterbild für ${title}" width="800" height="600" loading="lazy" decoding="async"></a><div class="product-body"><div class="product-tags"><span class="product-tag">${category}</span></div><h3 class="product-title">${title}</h3></div></article>`;
   };
 
   const updateView = (entries) => {
