@@ -49,12 +49,11 @@ if (wizard) {
 const productGrid = document.querySelector('#product-grid');
 const searchInput = document.querySelector('#search');
 const categorySelect = document.querySelector('#kategorie-filter');
-const tagsSelect = document.querySelector('#tags-filter');
 const applyButton = document.querySelector('#filter-apply');
 const nameDatalist = document.querySelector('#produktnamen-liste');
 const noResults = document.querySelector('#no-results');
 
-if (productGrid && searchInput && categorySelect && tagsSelect && applyButton && nameDatalist && noResults) {
+if (productGrid && searchInput && categorySelect && applyButton && nameDatalist && noResults) {
   const escapeHtml = (value) => value
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
@@ -90,21 +89,16 @@ if (productGrid && searchInput && categorySelect && tagsSelect && applyButton &&
       const categories = [...new Set(products.map((item) => item.category))].sort((a, b) => a.localeCompare(b, 'de'));
       categorySelect.innerHTML = '<option value="">Alle Kategorien</option>' + categories.map((cat) => `<option value="${escapeHtml(cat)}">${escapeHtml(cat)}</option>`).join('');
 
-      const tags = ['LED', 'Solar', 'Warnung', 'Tunnel', 'Flughafen', 'Helikopter', 'Seezeichen'];
-      tagsSelect.innerHTML = '<option value="">Alle Tags</option>' + tags.map((tag) => `<option value="${escapeHtml(tag)}">${escapeHtml(tag)}</option>`).join('');
-
       nameDatalist.innerHTML = products.map((item) => `<option value="${escapeHtml(item.name)}"></option>`).join('');
 
       const applyFilters = () => {
         const q = normalize(searchInput.value);
         const selectedCategory = normalize(categorySelect.value);
-        const selectedTag = normalize(tagsSelect.value);
 
         const filtered = products.filter((item) => {
           const inName = !q || normalize(item.name).includes(q);
           const inCategory = !selectedCategory || normalize(item.category) === selectedCategory;
-          const inTag = !selectedTag || normalize(item.name).includes(selectedTag) || normalize(item.category).includes(selectedTag);
-          return inName && inCategory && inTag;
+          return inName && inCategory;
         });
 
         updateView(filtered);
@@ -113,7 +107,6 @@ if (productGrid && searchInput && categorySelect && tagsSelect && applyButton &&
       applyButton.addEventListener('click', applyFilters);
       searchInput.addEventListener('input', applyFilters);
       categorySelect.addEventListener('change', applyFilters);
-      tagsSelect.addEventListener('change', applyFilters);
 
       updateView(products);
     })
