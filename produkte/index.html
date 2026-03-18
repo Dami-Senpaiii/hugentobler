@@ -12,15 +12,15 @@
 <main id="main" class="container">
 <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../">Start</a></li><li aria-current="page">Produkte</li></ol></nav>
 <section class="section intro"><h1>Produkte</h1><p>Übersicht unserer Spezialleuchten für verschiedene Einsatzgebiete. Filter dienen als schnelle Orientierung.</p></section>
-<section class="section" aria-label="Filter"><form class="filter-bar"><label for="search" class="sr-only">Suche</label><input id="search" type="search" placeholder="Produkt suchen"><select aria-label="Kategorie"><option>Alle Kategorien</option><option>Seezeichen</option><option>Tunnel</option></select><select aria-label="Tags"><option>Alle Tags</option><option>Solar</option><option>LED</option></select><button class="btn btn-secondary" type="button">Filter anwenden</button></form></section>
-<section class="section"><div class="product-grid">
+<section class="section" aria-label="Filter"><form class="filter-bar" id="produkte-filter" autocomplete="off"><label for="search" class="sr-only">Suche</label><input id="search" type="search" placeholder="Produkt suchen" list="produktnamen-liste"><datalist id="produktnamen-liste"></datalist><select id="kategorie-filter" aria-label="Kategorie"><option value="">Alle Kategorien</option></select><select id="tags-filter" aria-label="Tags"><option value="">Alle Tags</option></select><button class="btn btn-secondary" id="filter-apply" type="button">Filter anwenden</button></form></section>
+<section class="section"><div class="product-grid" id="product-grid">
 <article class="product-card">
   <a class="product-media" href="seezeichen/m550/"><img src="https://www.spezialleuchten.ch/assets/products/m550.svg" srcset="https://www.spezialleuchten.ch/assets/products/m550.svg 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Solarleuchte Typ M550" width="800" height="600" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/products/m550.svg';this.srcset='../assets/products/m550.svg 800w';"></a>
   <div class="product-body"><h3 class="product-title"><a href="seezeichen/m550/">Solarleuchte Typ M550</a></h3><dl class="product-specs"><div><dt>Einsatz</dt><dd>Seezeichen</dd></div><div><dt>Technologie</dt><dd>Solar / LED</dd></div><div><dt>Merkmal</dt><dd>unterhaltsfrei</dd></div></dl><div class="product-actions"><a class="btn btn-secondary" href="seezeichen/m550/">Details</a><a class="btn btn-primary" href="../assets/datenblaetter/m550.html">Datenblatt (Platzhalter)</a></div></div>
 </article>
 <article class="product-card"><a class="product-media" href="#"><img src="https://www.spezialleuchten.ch/assets/products/p200.svg" alt="Positionslicht P200" width="800" height="600" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/products/p200.svg';"></a><div class="product-body"><h3>Positionslicht P200</h3><p>Kompakte LED-Lösung für Hafenbereiche.</p></div></article>
 <article class="product-card"><a class="product-media" href="#"><img src="https://www.spezialleuchten.ch/assets/products/t300.svg" alt="Tunnelmodul T300" width="800" height="600" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../assets/products/t300.svg';"></a><div class="product-body"><h3>Tunnelmodul T300</h3><p>Hochsichtbare Warnleuchte mit Langzeitbetrieb.</p></div></article>
-</div></section>
+</div><p id="no-results" hidden>Keine Produkte für diesen Filter gefunden.</p></section>
 <nav aria-label="Seitennavigation"><ul class="pagination"><li><a href="#" aria-current="page">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li></ul></nav>
 </main>
 <footer class="site-footer"><div class="container legal">© Spezialleuchten AG</div></footer>
