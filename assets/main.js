@@ -1,11 +1,31 @@
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.main-nav');
-if (navToggle && nav) {
+const header = nav?.closest('.site-header');
+const headerInner = header?.querySelector('.header-inner');
+
+if (navToggle && nav && header && headerInner) {
+  const closeNav = () => {
+    nav.setAttribute('data-open', 'false');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  const updateNavLayout = () => {
+    header.classList.remove('nav-collapsed');
+    const shouldCollapse = headerInner.scrollWidth > headerInner.clientWidth;
+    header.classList.toggle('nav-collapsed', shouldCollapse);
+    if (!shouldCollapse) closeNav();
+  };
+
   navToggle.addEventListener('click', () => {
+    if (!header.classList.contains('nav-collapsed')) return;
     const open = nav.getAttribute('data-open') === 'true';
     nav.setAttribute('data-open', String(!open));
     navToggle.setAttribute('aria-expanded', String(!open));
   });
+
+  window.addEventListener('resize', updateNavLayout);
+  window.addEventListener('load', updateNavLayout);
+  updateNavLayout();
 }
 
 const wizard = document.querySelector('[data-wizard]');
