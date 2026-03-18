@@ -3,7 +3,7 @@
 ## Implementation notes
 - HTML/CSS-first, framework-free prototype with progressive enhancement.
 - Shared design tokens and layered styles in `styles/`.
-- Minimal JavaScript in `assets/main.js` for mobile navigation and quote wizard steps.
+- Minimal JavaScript in `assets/main.js` for quote wizard steps and product filtering.
 - Placeholder assets are included for structure and linking.
 - In environments without binary support, image placeholders are provided as SVG and datasheets as HTML placeholders.
 - Provisional font stack uses system sans-serif; verify against live site before production.
@@ -13,7 +13,7 @@
 - [x] Semantic landmarks (`header`, `main`, `nav`, `footer`)
 - [x] Hierarchical headings (`h1` per page + section headings)
 - [x] Visible focus style with `:focus-visible`
-- [x] Keyboard-usable navigation toggle and wizard controls
+- [x] Keyboard-usable wizard controls
 - [x] Form labels bound to inputs
 - [x] Error messaging slots tied via `aria-describedby`
 - [x] Minimum tap target sizing (~44px on controls)
