@@ -80,10 +80,10 @@ if (productGrid && searchInput && categorySelect && tagsSelect && applyButton &&
     .then((response) => response.json())
     .then((data) => {
       const products = (data.kategorien || []).flatMap((cat) =>
-        (cat.produkte || []).map((name) => ({
-          name,
+        (cat.produkte || []).map((product) => ({
+          name: typeof product === 'string' ? product : product.name,
           category: cat.kategorie,
-          source: cat.url,
+          source: typeof product === 'string' ? cat.url : (product.pdf || cat.url),
         }))
       );
 
