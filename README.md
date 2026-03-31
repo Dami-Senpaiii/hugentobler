@@ -48,3 +48,16 @@
 - `/styles/{tokens,base,components,pages}.css`
 - `/data/products.example.json`
 - `/assets/...`
+
+## Deploy to GitHub Pages (static, no Jekyll)
+If GitHub suggests configuring Jekyll, you can ignore that for this project. This repository is plain static HTML/CSS/JS.
+
+1. Commit and push to `main`.
+2. In GitHub: **Settings → Pages**.
+3. Under **Source**, choose **GitHub Actions**.
+4. The workflow at `.github/workflows/deploy-pages.yml` will publish the repository root as a static site.
+5. `.nojekyll` is included so Pages serves files directly without Jekyll processing.
+
+### Notes
+- First deploy can take a minute or two.
+- Your site URL will appear in the workflow run summary and Pages settings.
